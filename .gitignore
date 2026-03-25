@@ -1,4 +1,5 @@
 *.err
 *.tmp
+*.env
 /bin
 acces.log
