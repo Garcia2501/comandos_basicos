@@ -14,8 +14,8 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/carousel/"
     />
-    <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="assets/js/color-modes.js"></script>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
     <link href="carousel.css" rel="stylesheet" />
     <style>
@@ -363,90 +363,141 @@
       <div class="container marketing">
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</FISEI-UTA>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
+          <div class="col-lg-4 text-center">
+            <img 
+  src="assets/Imagenes/redes.png" 
+  class="rounded-circle" 
+  alt="Descripción de la imagen" 
+  width="140" 
+  height="140" 
+  style="object-fit: cover;"
+>
+            <h2 class="fw-normal">Administracion de redes</h2>
             <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
+              Servicio de administracion de redes, con soporte para configuracion de routers, switches, firewalls, entre otros dispositivos de red. Ubicado en el primer piso del edificio de Informatica.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="#servicios" data-bs-toggle="tab" data-bs-target="#redes">Ver mas: &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
+          <div class="col-lg-4 text-center">
+            <img 
+  src="assets/Imagenes/Laboratorios.png" 
+  class="rounded-circle" 
+  alt="Descripción de la imagen" 
+  width="140" 
+  height="140" 
+  style="object-fit: cover;"
+>
+            <h2 class="fw-normal">Laboratiorios</h2>
             <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
+              Laboratorios de la Facultad de Informatica, con equipamiento moderno y actualizado para el desarrollo de proyectos y actividades academicas relacionadas con la informatica. Ubicados en los dos bloques.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="#servicios" data-bs-toggle="tab" data-bs-target="#laboratorios">Ver mas: &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
+          <div class="col-lg-4 text-center">
+            <img 
+  src="assets/Imagenes/BIBLIOTECAS-DIGITALES-1.png" 
+  class="rounded-circle" 
+  alt="Descripción de la imagen" 
+  width="140" 
+  height="140" 
+  style="object-fit: cover;"
+>
+            <h2 class="fw-normal">Biblioteca virtual</h2>
             <p>
-              And lastly this, the third column of representative placeholder
-              content.
+              Biblioteca virtual de la Facultad de Informatica, con acceso a libros, revistas, tesis, entre otros recursos digitales relacionados con la informatica. Ubicados en los dos bloques
             </p>
             <p>
-              <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              <a class="btn btn-secondary" href="#servicios" data-bs-toggle="tab" data-bs-target="#biblioteca">Ver mas: &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
         <!-- START THE FEATURETTES -->
+        <!-- Servicios Section -->
+        <section id="servicios" class="py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Servicios</h2>
+            <ul class="nav nav-tabs justify-content-center" id="serviciosTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="redes-tab" data-bs-toggle="tab" data-bs-target="#redes" type="button" role="tab" aria-controls="redes" aria-selected="true">Administración de Redes</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="laboratorios-tab" data-bs-toggle="tab" data-bs-target="#laboratorios" type="button" role="tab" aria-controls="laboratorios" aria-selected="false">Laboratorios</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="biblioteca-tab" data-bs-toggle="tab" data-bs-target="#biblioteca" type="button" role="tab" aria-controls="biblioteca" aria-selected="false">Biblioteca Virtual</button>
+              </li>
+            </ul>
+            <div class="tab-content mt-4" id="serviciosTabContent">
+              <div class="tab-pane fade show active" id="redes" role="tabpanel" aria-labelledby="redes-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/Imagenes/redes.png" class="img-fluid rounded" alt="Administración de Redes">
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Administración de Redes</h3>
+                    <p>En la Facultad de Informática, el servicio de Administración de Redes es fundamental para mantener la infraestructura tecnológica que soporta todas nuestras actividades académicas y de investigación. Nuestro equipo de expertos en redes se encarga de diseñar, implementar y mantener redes seguras y eficientes.</p>
+                    <p>Servicios principales:</p>
+                    <ul>
+                      <li>Diseño y configuración de redes LAN/WAN</li>
+                      <li>Implementación de firewalls y sistemas de seguridad</li>
+                      <li>Monitoreo continuo del rendimiento de la red</li>
+                      <li>Soporte técnico 24/7 para resolución de problemas</li>
+                      <li>Actualizaciones y migraciones de infraestructura</li>
+                    </ul>
+                    <p>Utilizamos las últimas tecnologías y mejores prácticas para garantizar la conectividad ininterrumpida y la protección contra amenazas cibernéticas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="laboratorios" role="tabpanel" aria-labelledby="laboratorios-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/Imagenes/Laboratorios.png" class="img-fluid rounded" alt="Laboratorios">
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Laboratorios</h3>
+                    <p>Nuestros laboratorios representan el corazón de la experiencia práctica en la Facultad de Informática. Equipados con tecnología de punta, estos espacios permiten a los estudiantes aplicar los conocimientos teóricos en entornos reales de desarrollo e investigación.</p>
+                    <p>Características destacadas:</p>
+                    <ul>
+                      <li>Laboratorios especializados en desarrollo de software</li>
+                      <li>Equipos de cómputo de alto rendimiento para investigación</li>
+                      <li>Herramientas para análisis de datos y machine learning</li>
+                      <li>Entornos de virtualización para pruebas seguras</li>
+                      <li>Espacios colaborativos para proyectos grupales</li>
+                    </ul>
+                    <p>El mantenimiento constante y la actualización tecnológica garantizan que nuestros estudiantes trabajen con las herramientas más avanzadas del mercado.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="biblioteca" role="tabpanel" aria-labelledby="biblioteca-tab">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/Imagenes/BIBLIOTECAS-DIGITALES-1.png" class="img-fluid rounded" alt="Biblioteca Virtual">
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Biblioteca Virtual</h3>
+                    <p>La Biblioteca Virtual de la Facultad de Informática es un recurso invaluable que proporciona acceso instantáneo a una vasta colección de conocimientos en el campo de la informática. Diseñada para apoyar el aprendizaje autónomo y la investigación avanzada.</p>
+                    <p>Recursos disponibles:</p>
+                    <ul>
+                      <li>Más de 10,000 libros electrónicos especializados</li>
+                      <li>Revistas científicas y publicaciones periódicas</li>
+                      <li>Tesis y trabajos de investigación de estudiantes</li>
+                      <li>Bases de datos académicas internacionales</li>
+                      <li>Herramientas de búsqueda inteligente y recomendación</li>
+                    </ul>
+                    <p>Con acceso remoto 24/7 y soporte técnico especializado, la biblioteca virtual facilita el acceso al conocimiento desde cualquier lugar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <hr class="featurette-divider" />
         <div class="row featurette">
           <div class="col-md-7">
